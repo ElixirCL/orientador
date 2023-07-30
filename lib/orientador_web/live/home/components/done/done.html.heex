@@ -1,0 +1,13 @@
+<div class="column is-8 is-offset-2 register">
+    <div class="columns">
+        <div class="column left">
+            <h1 class="title is-1"><img class="image" width="200px" height="auto" src={~p"/images/uvm.png"} alt="UVM Logo"></h1>
+            <h2 class="subtitle colored is-4">Orientador Vocacional GPT.</h2>
+            <%= for item <- @result
+             |> String.split("\n") do %>
+                <p class="description" style="margin-bottom:3%;"><%= item %></p>
+            <% end %>
+        </div>
+
+    </div>
+</div>
