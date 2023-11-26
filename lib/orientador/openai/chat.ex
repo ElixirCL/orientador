@@ -12,7 +12,7 @@ defmodule Orientador.Chat do
 
   import Orientador.Chat.Roles
 
-  @config OpenaiEx.new(System.get_env("OPENAI_KEY"))
+  @config OpenaiEx.new("OPENAI_KEY")
 
   defp prologue(),
        do: [
