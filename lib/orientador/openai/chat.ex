@@ -130,7 +130,8 @@ defmodule Orientador.Chat do
       )
 
     response = ChatCompletion.create(@config, operation)
-    Logger.debug(response)
+
+    IO.inspect(response)
 
     answer = List.first(response["choices"])
 
